@@ -38,9 +38,9 @@ while(adicionarItens != "não"){
             alert("Essa categoria não foi pré-definida.")
         }
     } else if(adicionarItens === "remover"){
-	if(hortFrut.length === 0 && laticinios.length === 0 && doces.length === 0 && limpeza.length === 0){  //se a lista estiver vazia (tratamento de bug, caso a pessoa digite "remover" mesmo quando forem exibidas apenas as opções "sim" e "não"
+	if(hortFrut.length === 0 && laticinios.length === 0 && doces.length === 0 && limpeza.length === 0){  
 		alert(`A lista está vazia!`);
-	} else {  //se a lista não estiver vazia
+	} else {  
 		remover = prompt(`Lista de compras:\n  Hort Frut: ${hortFrut}\n  Laticínios: ${laticinios}\n  Doces: ${doces}\n  Limpeza: ${limpeza}\n\nQual produto você deseja remover?`);
 		if(hortFrut.indexOf(remover) != -1){
 			hortFrut.splice(hortFrut.indexOf(remover), 1);
